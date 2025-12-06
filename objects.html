@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mathematical Function</h1>
+    <p id="demo"></p>
+    <script>
+        // var person = {
+        //     name:"Shauraybir",
+        //     age: 15,
+        //     class:"9th"
+        // };
+        // document.write("My name is "+person.name+" and i am "+person.age+". I study in "+person.class);
+
+        // var value=Math.abs(-25);
+        // document.write("value is "+value+"<br>");
+
+        // var value1=Math.asin(90);
+        // document.write("value is "+value1+"<br>");
+
+        // var value2=Math.atan(1);
+        // document.write("value is "+value2+"<br>");
+
+        // var value3=Math.atan(.5);
+        // document.write("Value is "+value3+"<br>");
+
+        function findMax(){
+            var i;
+            var max = 0;
+            for(i=0;i<arguments.lenght;i++){
+                if(arguments[i] > max){
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("demo").innerHTML = findMax(4,5,6);
+        
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <p>Finding the largest number with help of Argument Objects  </p>
+    <p id="result"></p>
+    <script>
+      function findMax() {
+        
+        var max = 0;
+        for(i = 0; i < arguments.length; i++) {
+          if (arguments[i] > max) {
+            max = arguments[i];
+          }
+        }
+        return max;
+      } 
+      document.getElementById("result").innerHTML = findMax(8, 4, 5, 6, 2);
+    </script>
+    
+
+  </body>
+</html>
